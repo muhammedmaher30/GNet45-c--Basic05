@@ -1,4 +1,6 @@
-﻿namespace scond_Application
+﻿using System.Drawing;
+
+namespace scond_Application
 {
     internal class Program
     {
@@ -18,9 +20,25 @@
             //Console.WriteLine(copiesInStock);
             //Question -3 
             //Add a public string Title; field to Book. Set it and print it from Main. 
-            string Title = "C# Programming";
+            // string Title = "C# Programming";
 
-            Console.WriteLine(Title);
+            // Console.WriteLine(Title);
+
+
+
+            //Question -4 
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, 
+            // assign it Genre.Science, and print it. 
+           enum Genre
+        {
+            Fiction,
+            NonFiction,
+            Science
+        }
+
+        Genre genre = Genre.Science;
+
+        Console.WriteLine(genre);
 
         }
     }
