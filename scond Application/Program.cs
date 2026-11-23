@@ -5,12 +5,18 @@ namespace scond_Application
 {
     internal class Program
     {
+        //enum Genre
+        //{
+        //    Fiction,
+        //    NonFiction,
+        //    Science
         enum Genre
         {
             Fiction,
             NonFiction,
             Science
         }
+        //  }
         static void Main(string[] args)
         {
             //Question -1 
@@ -73,12 +79,26 @@ namespace scond_Application
             //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and 
             // print the result.
 
-            string genreText = "Science";
+            //string genreText = "Science";
 
-            Genre genre = Enum.Parse<Genre>(genreText);
+            //Genre genre = Enum.Parse<Genre>(genreText);
 
-            Console.WriteLine(genre);
+            //Console.WriteLine(genre);
+            //Question 8 
+            //
+            // Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
+            //attempt the conversion. Print "Unknown genre" if it fails.
 
+            string genreText = "Mystery";
+
+            if (Enum.TryParse<Genre>(genreText, out Genre genre))
+            {
+                Console.WriteLine(genre);
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
 
         }
     }
