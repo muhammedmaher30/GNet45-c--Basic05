@@ -1,8 +1,16 @@
 ﻿
+using System.Drawing;
+
 namespace scond_Application
 {
     internal class Program
     {
+        enum Genre
+        {
+            Fiction,
+            NonFiction,
+            Science
+        }
         static void Main(string[] args)
         {
             //Question -1 
@@ -57,9 +65,21 @@ namespace scond_Application
             //Question 6 
             //Given int genreNumber = 1;, cast it into a Genre value and print the result.
 
-            int genreNumber = 1;
+            // int genreNumber = 1;
 
-            Console.WriteLine((Genre)genreNumber);
+            //Console.WriteLine((Genre)genreNumber);
+
+            //QUESTION 7
+            //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and 
+            // print the result.
+
+            string genreText = "Science";
+
+            Genre genre = Enum.Parse<Genre>(genreText);
+
+            Console.WriteLine(genre);
+
+
         }
     }
 }
