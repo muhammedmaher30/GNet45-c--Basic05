@@ -43,16 +43,23 @@ namespace scond_Application
             //Using the Genre enum above, print the underlying int value of 
             //Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
 
-            Console.WriteLine((int)Genre.Fiction);
-            Console.WriteLine((int)Genre.NonFiction);
-            Console.WriteLine((int)Genre.Science);
-        }
+            //  Console.WriteLine((int)Genre.Fiction);
+            //Console.WriteLine((int)Genre.NonFiction);
+            //Console.WriteLine((int)Genre.Science);
+            //}
 
-        enum Genre
-        {
-            Fiction,
-            NonFiction,
-            Science
+            //enum Genre
+            //{
+            //  Fiction,
+            //NonFiction,
+
+            //Science
+            //Question 6 
+            //Given int genreNumber = 1;, cast it into a Genre value and print the result.
+
+            int genreNumber = 1;
+
+            Console.WriteLine((Genre)genreNumber);
         }
     }
 }
