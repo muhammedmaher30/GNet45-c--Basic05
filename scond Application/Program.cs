@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-
+﻿
 namespace scond_Application
 {
     internal class Program
@@ -18,28 +17,42 @@ namespace scond_Application
             // Why ?
             // int copiesInStock = 5;
             //Console.WriteLine(copiesInStock);
+
+
             //Question -3 
             //Add a public string Title; field to Book. Set it and print it from Main. 
             // string Title = "C# Programming";
-
             // Console.WriteLine(Title);
-
 
 
             //Question -4 
             //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, 
             // assign it Genre.Science, and print it. 
-           enum Genre
+            //  enum Genre
+            //{
+            //  Fiction,
+            //NonFiction,
+            //Science
+            //}
+
+            //Genre genre = Genre.Science;
+            //Console.WriteLine(genre);
+
+
+            //Question 5 
+            //Using the Genre enum above, print the underlying int value of 
+            //Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
+
+            Console.WriteLine((int)Genre.Fiction);
+            Console.WriteLine((int)Genre.NonFiction);
+            Console.WriteLine((int)Genre.Science);
+        }
+
+        enum Genre
         {
             Fiction,
             NonFiction,
             Science
-        }
-
-        Genre genre = Genre.Science;
-
-        Console.WriteLine(genre);
-
         }
     }
 }
